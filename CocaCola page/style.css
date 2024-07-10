@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+}
+
+.banner {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("cocaCola.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.subBanner {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subBanner h1 {
+  color: white;
+  z-index: 1;
+  font-family: "Playwrite CU", cursive;
+  font-size: 3em;
+  text-align: center;
+}
+
+.subBanner a {
+  background: #5c0104;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 0.5px 1rem;
+  color: white;
+  font-family: "Mukta", sans-serif;
+  z-index: 1;
+  font-size: 2em;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.slow-animation {
+  animation-duration: 3s;
+}
+
+.animate__bounceInUp {
+  --animate-duration: 2s;
+}
+
+.animate__fadeInDown {
+  --animate-duration: 2s;
+}
